@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #sc
+            {
+                width: 150px;
+                height: 20px;
+                border-radius: 10px;
+            }
+            .d1
+            {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .bo
+            {
+                justify-content: center;
+                height: 250px;
+                width: 200px;
+                border: 2px solid black;  
+                background-color: aqua; 
+            }
+            input{
+                margin: 10px;
+            }
+            #ie
+            {
+                width: 60px;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="bo">
+        
+        <div> <input type="text" id="sc"></div>
+            <div class="d1">
+                <input type="button"value="1" onclick="sc.value+='1'">
+                <input type="button" value="2"onclick="sc.value+='2'">
+                <input type="button" value="3"onclick="sc.value+='3'">
+                <input type="button" value="+"onclick="sc.value+='+'">
+         </div>
+         <div class="d1">
+            <input type="button"value="4"onclick="sc.value+='4'">
+            <input type="button" value="5"onclick="sc.value+='5'">
+            <input type="button" value="6"onclick="sc.value+='6'">
+            <input type="button" value="-"onclick="sc.value+='-'">
+     </div>
+     <div class="d1">
+        <input type="button"value="7"onclick="sc.value+='7'">
+        <input type="button" value="8"onclick="sc.value+='8'">
+        <input type="button" value="9"onclick="sc.value+='9'">
+        <input type="button" value="*"onclick="sc.value+='*'">
+ </div>
+ <div class="d1">
+    <input type="button" value="/"onclick="sc.value+='/'">
+    <input type="button" value="%"onclick="sc.value+='%'"> 
+    <input id="ie" type="button" value="="onclick="sc.value=eval(sc.value)">
+ </div>
+ <div class="d1">
+    <input type="button" value="del"onclick="sc.value=sc.value.slice(0,-1)">
+    <input type="button" value="clear"onclick="sc.value=' '">
+    <input type="button" value="0"onclick="sc.value+='0'">
+ </div>    
+</div>  
+</body>
+</html>
